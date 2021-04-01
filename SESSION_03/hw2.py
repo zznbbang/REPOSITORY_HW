@@ -20,7 +20,7 @@ def avg(n):
     for i in range (0,len(n),1):
         sum = sum + n[i]
     average = sum / len(n)
-    print(f'{sum, len(n), average}')
+    print(f'입력된 값의 합은 {sum}, 총 개수는 {len(n)}, 평균은 {average}입니다.')
 
 # Step2. 모든 수 입력받고 list에 저장하기
 a=0
@@ -29,7 +29,6 @@ core=[]
 while True:
     a=int(input("평균을 구할 숫자를 입력하세요. 그만 입력하고 싶다면 -1을 입력하세요:"))
     if a!=-1:
-        print(f'{index,a}')
         core.insert(index,a)
         index=index+1
     elif a==-1 and index==0:
