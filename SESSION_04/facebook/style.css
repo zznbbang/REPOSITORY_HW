@@ -1,0 +1,73 @@
+#main{
+    font-family: 'Nanum Gothic', sans-serif;
+    background-color: lightgray;
+}
+
+#blue{
+    display : flex;
+    padding: 10px 30px;
+    background-color: royalblue;
+    justify-content : space-between;
+    color:white;
+    height: 30px;
+}
+#search{
+    height:40px;
+    width: 80%;
+    text-align: center;
+}
+#select{
+    display:flex;
+    background-color: white;
+    justify-content : space-between;
+    padding: 10px 50px;
+}
+
+#think{
+    display:flex;
+    justify-content : space-between;
+    background-color: white;
+    padding: 10px 20px;
+    margin:3px 0;
+}
+
+.icon_box{
+    width: 70px;
+    height: 70px; 
+    border-radius: 70%;
+    overflow: hidden;
+}
+
+.icon{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#box{
+    height:20px;
+    width: 80%;
+    border: 1.5px solid lightgray;
+    border-radius: 30px;
+    margin: 15px 10px;
+    padding: 5px 20px;
+    font-size: 15px;
+}
+
+#think h6{
+    margin:0;
+}
+
+#story{
+    height:200px;
+    background-color: white;
+    margin:3px 0;
+}
+
+#story h4{
+    margin:0;
+}
+
+#story h5{
+    margin:0;
+}
