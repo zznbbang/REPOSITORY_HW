@@ -12,7 +12,7 @@ def result(request):
     if (len(text)==0):
         word_count=0;
     else:
-        word_count = len(text.split(" "))
+        word_count = len(text.replace("\n"," ").split(" "))
     
     return render(request,'result.html',{
         'text' : text,
