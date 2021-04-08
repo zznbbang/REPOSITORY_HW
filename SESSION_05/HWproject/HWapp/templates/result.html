@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'result.css' %}">
+
+
+</head>
+<body>
+    <div id='wrap'>
+        <div id="input">
+            <div class="inputtext">
+                <h4>입력글자</h4>
+            </div>
+            <div class="inputtext">
+                <h5>{{text}}</h5>
+            </div>
+        </div>
+        <div id="text">
+            <div class="content">
+                <p class="inline">글자수</p> 
+                <h4 class="inline">{{total_len}}</h4>
+                <p class="inline">자</p>
+            </div>
+
+            <div class="content">
+                <p class="inline">공백제외</p> 
+                <h4 class="inline">{{no_space}}</h4>
+                <p class="inline">자</p>
+            </div>
+            <div class="content">
+                <p class="inline">단어 수</p> 
+                <h4 class="inline">{{word_count}}</h4>
+                <p class="inline">개</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
