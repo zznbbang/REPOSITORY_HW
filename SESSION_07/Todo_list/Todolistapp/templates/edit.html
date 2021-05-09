@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DWG 경기 수정</title>
+    {% load static %}
+    <link rel='stylesheet' type='text/css' href="{% static 'new.css' %}">
+
+</head>
+<body>
+    <form action="" method="post">
+        {% csrf_token %}
+        <div>
+            <label for="title">경기</label>
+            <input type="text" id="title" name='title' value="{{post.title}}">
+        </div>
+        <div>
+            <label for="content">세부사항</label>
+            <textarea name="content" id="content" cols='30' rows='10'>{{post.content}}</textarea>
+        </div>
+        <div>
+            <label for="date">날짜</label>
+            <input type="date" id="date" name='date' value="{{post.date}}">
+        </div>
+        <div>
+             <button type="submit">수정하기</button>
+        </div>
+    </form>
+</body>
+</html>

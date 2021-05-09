@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap');
+
+body{
+ background-color: #40e0d0;
+ font-family: 'Nanum Gothic Coding', monospace;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+}
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+label{
+    margin: 10px;
+    font-weight: 900;
+}
+button{
+    margin : 20px;
+    background-color: ivory;
+    border: seagreen; 
+}
+
+a{margin:10px;}
+a:link{color:indianred;}
+a:visited{color:indianred;}
